@@ -28,7 +28,9 @@ git config --global alias.br branch
 git config --global alias.last 'log -1 HEAD'
 git config --global alias.unstage 'reset HEAD --'
 
-# Add remote GitHub repository
+# Add code for remote GitHub repository
+
+# Add code for custom prompt.  Perhaps directory and git branch
 
 # Configure Vim
 cat <<EOL > ~/.vimrc
