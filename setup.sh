@@ -30,7 +30,11 @@ git config --global alias.unstage 'reset HEAD --'
 
 # Add code for remote GitHub repository
 
-# Add code for custom prompt.  Perhaps directory and git branch
+# Add code to local ~/.bashrc file to:
+# add some useful CLI aliases
+# customize prompt, perhaps with directory and git branch.
+# etc.
+
 
 # Configure Vim
 cat <<EOL > ~/.vimrc
