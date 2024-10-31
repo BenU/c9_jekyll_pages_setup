@@ -35,6 +35,31 @@ git config --global alias.unstage 'reset HEAD --'
 # customize prompt, perhaps with directory and git branch.
 # etc.
 
+# consider adding code to customize the CLI prompt
+# The Learn Enough Git Tutorial adds the following to include the git branch as well as brach tab completion
+
+# curl -o ~/.git-prompt.sh -L https://cdn.learnenough.com/git-prompt.sh
+# curl -o ~/.git-completion.bash -L https://cdn.learnenough.com/git-completion.bash
+# # Make the downloaded scripts executable with the following commands:
+# chmod +x ~/.git-prompt.sh
+# chmod +x ~/.git-completion.bash
+
+# # Next the ~/.bashrc file must be updated with links to the new scripts as well
+# as appropriate PS1 code.
+# echo "In the ~/.bashrc file delete the old PS1 lines and add the following: 
+# ...
+# # Git configuration
+# # Branch name in prompt
+# source ~/.git-prompt.sh
+# PS1='[\W$(__git_ps1 " (%s)")]\$ '
+# export PROMPT_COMMAND='echo -ne "\033]0;${PWD/#$HOME/~}\007"'
+# # Tab completion for branch names
+# source ~/.git-completion.bash"
+
+# # source to make the above changes active:
+# source ~/.bashrc
+
+
 
 # Configure Vim
 cat <<EOL > ~/.vimrc
